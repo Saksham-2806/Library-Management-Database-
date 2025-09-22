@@ -40,8 +40,7 @@ It includes table creation, sample data insertion, and queries for issuing and r
 
 ## ▶️ Sample Queries
 
-- **View all books**
-```sql
+##View all Books
 SELECT * FROM Books;
 
 ## View all members
