@@ -40,20 +40,24 @@ It includes table creation, sample data insertion, and queries for issuing and r
 
 ## ▶️ Sample Queries
 
-##View all Books
+- **View all books**
+```sql
 SELECT * FROM Books;
 
-## View all members
+- View all members
+'''sql
 SELECT * FROM Members;
 
-## View active loans
+- View active loans
+'''
 SELECT l.loan_id, b.title, m.name, l.loan_date
 FROM Loans l
 JOIN Books b ON l.book_id = b.book_id
 JOIN Members m ON l.member_id = m.member_id
 WHERE l.return_date IS NULL;
 
-## view loan History
+- view loan History
+'''
 SELECT l.loan_id, b.title, m.name, l.loan_date, l.return_date
 FROM Loans l
 JOIN Books b ON l.book_id = b.book_id
